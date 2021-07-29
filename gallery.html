@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Gallery</title>
+
+  <link rel="stylesheet" href="css/style.css">
+
+<style>
+body {
+  background-image: url('images/nice-border-gold.jpg');
+}
+</style>
+
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>  
+      <li><a href="biodata.html">Biodata</a></li>   
+      <li><a href="education.html">Education</a></li> 
+      <li><a href="family.html">Family</a></li> 
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="bucket-list.html">Bucket List</a></li>
+      <li><a href="contact.html">Contact</a></li> 
+    </ul> 
+  </nav>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+<!-- The grid: four columns -->
+<div class="row">
+  <div class="column" style="left: 300px">
+
+</style>
+
+<div style="text-align:center; color: white; ">
+  <h2>Photos of myself</h2>
+  <p>Click on the images and the expanded image will appear:</p>
+</div>
+
+    <div class="column">
+    <img src="images/me0.jpeg" style="width: 200px; height: 200px; cursor:pointer"
+  onclick="onClick(this)" class="modal-hover-opacity">
+  </div>
+  <div class="column">
+    <img src="images/me01.jpeg" style="width: 200px; height: 200px; cursor:pointer" 
+    onclick="onClick(this)" class="modal-hover-opacity">
+  </div>
+  <div class="column">
+    <img src="images/me1.jpeg" style="width: 200px; height: 200px; cursor:pointer" 
+    onclick="onClick(this)" class="modal-hover-opacity">
+  </div>
+  <div class="column">
+    <img src="images/me2.jpeg" style="width: 200px; height: 200px; cursor:pointer"
+    onclick="onClick(this)" class="modal-hover-opacity">
+  </div>
+
+  <div style="color: white; text-align: center;">
+  <h2>Photos of my nieces and nephew</h2>
+  <p>Click on the images and the expanded image will appear:</p>
+  </div>
+  <div class="row">
+  <div class="column">
+    <img src="images/n11.jpeg" style="width: 200px; height: 200px; cursor:pointer"
+    onclick="onClick(this)" class="modal-hover-opacity">
+  </div>
+  <div class="column">
+    <img src="images/n1.jpeg" style="width: 200px; height: 200px; cursor:pointer"
+    onclick="onClick(this)" class="modal-hover-opacity">
+  </div>
+  <div class="column">
+    <img src="images/n2.jpeg" style="width: 200px; height: 200px; cursor:pointer"
+    onclick="onClick(this)" class="modal-hover-opacity">
+  </div>
+  <div class="column">
+    <img src="images/n3.jpeg" style="width: 200px; height: 200px; cursor:pointer"
+    onclick="onClick(this)" class="modal-hover-opacity">
+  </div>
+  
+  <div style="text-align:center; color: white; ">
+  <h2>Photos of my friends</h2>
+  <p>Click on the images and the expanded image will appear:</p>
+  </div>
+  <div class="row">
+  <div class="column" style="left: 300px">
+    <img src="images/f1.jpeg" style="width: 200px; height: 200px; cursor:pointer"
+    onclick="onClick(this)" class="modal-hover-opacity">
+  </div>
+  <div class="column">
+    <img src="images/f2.jpeg" style="width: 200px; height: 200px; cursor:pointer"
+    onclick="onClick(this)" class="modal-hover-opacity">
+  </div>
+  <div class="column">
+    <img src="images/f3.jpeg" style="width: 200px; height: 200px; cursor:pointer"
+    onclick="onClick(this)" class="modal-hover-opacity">
+  </div>
+  <div class="column">
+    <img src="images/f4.jpeg" style="width: 200px; height: 200px; cursor:pointer"
+    onclick="onClick(this)" class="modal-hover-opacity">
+  </div>
+</div>
+
+<div style="text-align:center; color: white; ">
+  <h2>Photos that I shoot</h2>
+  <p>Click on the images and the expanded image will appear:</p>
+  </div>
+  <div class="row">
+  <div class="column" style="left: 300px">
+    <img src="images/ps1.jpeg" style="width: 200px; height: 200px; cursor:pointer"
+    onclick="onClick(this)" class="modal-hover-opacity">
+  </div>
+  <div class="column">
+    <img src="images/ps2.jpeg" style="width: 200px; height: 200px; cursor:pointer"
+    onclick="onClick(this)" class="modal-hover-opacity">
+  </div>
+  <div class="column">
+    <img src="images/ps3.jpeg" style="width: 200px; height: 200px; cursor:pointer"
+    onclick="onClick(this)" class="modal-hover-opacity">
+  </div>
+  <div class="column">
+    <img src="images/ps4.jpeg" style="width: 200px; height: 200px; cursor:pointer"
+    onclick="onClick(this)" class="modal-hover-opacity">
+  </div>
+</div>
+
+<div id="modal01" class="modal" onclick="this.style.display='none'">
+  <span class="close">&times;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+  <div class="modal-content">
+    <img id="img01" style="max-width:100%">
+  </div>
+</div>
+
+<script>
+  function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+}
+</script>
+
+</body>
+</html>
